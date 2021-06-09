@@ -12,17 +12,17 @@ int main()
     cout<<"Ingrese el valor de la segunda ordenada"<<endl;cin>>b2;
 
     if(m1==m2 && b1!=b2){
-        cout<<"Las rectas son paralelas. No hay intersecci髇"<<endl;
+        cout<<"Las rectas son paralelas. No hay intersecci贸n"<<endl;
     }else{
         if(m1==m2&&b1==b2){
-            cout<<"SOn rectas paralelas e iguales. Las intersecci髇 entre ellas es la recta puesta.";
+            cout<<"SOn rectas paralelas e iguales. Las intersecci贸n entre ellas es la recta puesta.";
         }
     }
-    if(m1!=m2){
-       cout<<"Estas dos rectas tienen intersecci髇. Procedemos a buscarla."<<endl;
+    if(m1!=m2 && b1!=b2){
+       cout<<"Estas dos rectas tienen intersecci贸n. Procedemos a buscarla."<<endl;
        x1=(b1-b2)/(m2-m1);
        y1=(m1*x1)+b1;
-       cout<<"La intersecci髇 entre ambas rectas es en:"<<x1<<";"<<y1<<endl;
+       cout<<"La intersecci贸n entre ambas rectas es en:"<<x1<<";"<<y1<<endl;
     }
     cout<<"\nFin del programa";
     return 0;
